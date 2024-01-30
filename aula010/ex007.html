@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>somando</title>
+    <title>calculadora</title>
     <style>
-        body {
-            font: bolder 20px arial;
+        body{
+            font: normal 20px arial;
         }
-        input#res{
+        input.b{
+            width: 80px;
+            margin-left: 5px;
+        }
+        div#res{
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>calculadora de soma</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res"></div>
+    <h1>calculadora simples</h1>
+    <div>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="somar" onclick="somar()" class="b">
+    </div>
+    <div id="res">resultado</div>
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
@@ -27,7 +33,7 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+            res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s}</strong>`
         }
     </script>
 </body>
