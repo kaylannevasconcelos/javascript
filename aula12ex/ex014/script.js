@@ -11,7 +11,7 @@ function carregar() {
         img.src = 'tardegimp.png'
         document.body.style.background = '#b9846f'
     } else {
-        img.src = 'noitegimp.png'
+        img.src = 'pexels-aleksandar-pasaric-2303337.jpg'
         document.body.style.background = '#515154'
     }
 }

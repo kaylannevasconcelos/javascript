@@ -23,6 +23,8 @@ div {
 img {
     border-radius: 50%;
     padding: 10px;
+    width: 200px;
+    height: 200px;
 }
 footer {
     color: white;
