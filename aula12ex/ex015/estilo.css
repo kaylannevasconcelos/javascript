@@ -19,6 +19,9 @@ section {
 }
 img {
     border-radius: 50%;
+    padding: 15px;
+    display: block;
+    margin: auto;
 }
 footer {
     color: white;
