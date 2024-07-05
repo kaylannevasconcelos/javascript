@@ -7,3 +7,5 @@ function fatorial(n) {
 }
 
 console.log(fatorial(6))
+
+// fatorial da maneira tradicional.
