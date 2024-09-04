@@ -1,6 +1,6 @@
 let num = document.querySelector('input#fnum')
-let lista = document.querySelector('input#flista')
-let res = document.querySelector("div#res")
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
 let valores = []
 
 function isNumero(n) {
@@ -21,7 +21,7 @@ function inLista(n, 1) {
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
-        window.alert('tudo ok')
+        window.alert('Tudo Ok')
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
