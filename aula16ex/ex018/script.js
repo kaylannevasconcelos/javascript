@@ -1,7 +1,7 @@
 let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
-let valores = []
+let valores = [] /* quando colchetes são colocados na variável ela vira um VETOR */
 
 function isNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
